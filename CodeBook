@@ -1,0 +1,28 @@
+Getting and Cleaning Data Project
+
+
+Descripción
+DescripciónInformación adicional sobre las variables, los datos y las transformaciones utilizadas en el proyecto del curso Johns Hopkins Getting and Cleaning Data.
+
+Datos de la fuente
+Los datos y la descripción se pueden encontrar aquí
+
+Data Set Information
+Los experimentos se han llevado a cabo con un grupo de 30 voluntarios en un rango de edad de 19 a 48 años. Cada persona realizó seis actividades (CAMINAR, CAMINAR_ARRIBA, CAMINAR_ABAJO, SENTARSE, ESTAR, TENDERSE) llevando un smartphone (Samsung Galaxy S II) en la cintura. Utilizando su acelerómetro y giroscopio integrados, capturamos la aceleración lineal de 3 ejes y la velocidad angular de 3 ejes a una frecuencia constante de 50 Hz. Los experimentos se han grabado en vídeo para etiquetar los datos manualmente. El conjunto de datos obtenido se ha dividido aleatoriamente en dos conjuntos, en los que se seleccionó el 70% de los voluntarios para generar los datos de entrenamiento y el 30% los datos de prueba.
+
+Las señales de los sensores (acelerómetro y giroscopio) se preprocesaron aplicando filtros de ruido y, a continuación, se muestrearon en ventanas deslizantes de anchura fija de 2,56 segundos y solapamiento del 50% (128 lecturas/ventana). La señal de aceleración del sensor, que tiene componentes gravitacionales y de movimiento del cuerpo, se separó mediante un filtro Butterworth de paso bajo en aceleración del cuerpo y gravedad. Se supone que la fuerza gravitatoria sólo tiene componentes de baja frecuencia, por lo que se utilizó un filtro con una frecuencia de corte de 0,3 Hz. A partir de cada ventana, se obtuvo un vector de características calculando las variables del dominio del tiempo y de la frecuencia.
+
+Información de atributos
+Para cada registro del conjunto de datos se proporciona:
+
+Aceleración triaxial procedente del acelerómetro (aceleración total) y la aceleración estimada del cuerpo.
+Velocidad angular triaxial procedente del giroscopio.
+Un vector de 561 características con variables en el dominio del tiempo y la frecuencia.
+Su etiqueta de actividad.
+Un identificador del sujeto que realizó el experimento.
+Por favor, consulte el README.md para saber cómo se implementan las siguientes instrucciones README.md
+1. Combinar los conjuntos de entrenamiento y de prueba para crear un conjunto de datos.
+2. Extrae sólo las medidas de la media y la desviación estándar de cada medida.
+3. Utiliza nombres de actividad descriptivos para nombrar las actividades en el conjunto de datos
+4. Etiqueta adecuadamente el conjunto de datos con nombres descriptivos de las variables.
+5. A partir del conjunto de datos del paso 4, crea un segundo conjunto de datos independiente y ordenado con la media de cada variable para cada actividad y cada sujeto.
